@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
 /*common的主要作用就是为APP提供所有的基础内容,如网络请求,工具类,图片处理的方法等许多的内容*/
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -14,6 +15,10 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    /*基础包*/
     compile "com.android.support:appcompat-v7:$rootProject.appcompatVersion"
     compile "com.android.support.constraint:constraint-layout:$rootProject.constraintLayoutVersion"
+    /*黄油刀*/
+    compile "com.jakewharton:butterknife:$rootProject.butterknifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterknifeCompilerVersion"
 }

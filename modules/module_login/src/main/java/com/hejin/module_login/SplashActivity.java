@@ -1,13 +1,23 @@
 package com.hejin.module_login;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import com.hejin.lib_common.base.BaseActivity;
+import com.hejin.lib_common.base.BasePresenter;
 
-public class SplashActivity extends AppCompatActivity {
+/**
+ * 闪屏页面
+ * <p>
+ * 说明:此页面包含的功能如下:
+ * 1.VideoView播放本地动画
+ */
+public class SplashActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+    protected int provideContentViewId() {
+        return R.layout.activity_splash;
+    }
+
+    @Override
+    public BasePresenter createPresenter() {
+        return null;
     }
 }
