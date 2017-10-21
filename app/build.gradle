@@ -21,8 +21,8 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     if (isModule.toBoolean()) {
-        compile project(':module_news')
+        compile project(':modules:module_news')
     } else {
-        compile project(':lib_common')
+        compile project(':modules:lib_common')
     }
 }

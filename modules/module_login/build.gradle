@@ -32,5 +32,6 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':lib_common')
+    compile project(':modules:lib_common')
+    compile 'com.android.support.constraint:constraint-layout:1.0.1'
 }
