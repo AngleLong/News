@@ -6,3 +6,6 @@
 
 #用到的第三方
 ##1.黄油刀ButterKnife
+组件化使用黄油刀的时候遇到的一些问题(这里大家自行考虑):
+- [侯大虎虎的文章](http://www.jianshu.com/p/1fa69ad55b0e)
+- [tz_1qu212的文章]()http://blog.csdn.net/tz_1qu212/article/details/77984599)

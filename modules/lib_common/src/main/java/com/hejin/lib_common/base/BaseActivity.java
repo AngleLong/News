@@ -51,6 +51,9 @@ public abstract class BaseActivity<V extends BaseView<T>, T extends BasePresente
 
         /*记录打开的Activity*/
         ActivityManager.addActivity(this);
+
+        /*初始化控件的方法*/
+        initView();
     }
 
     @Override
@@ -81,6 +84,15 @@ public abstract class BaseActivity<V extends BaseView<T>, T extends BasePresente
     public abstract T createPresenter();
 
     //------------------------------可实现的方法------------------------------//
+
+
+    /**
+     * <p>
+     * 说明:初始化控件的方法
+     * </P>
+     */
+    public void initView() {
+    }
 
     /**
      * 获取页面传递的数据,这个方法是空实现

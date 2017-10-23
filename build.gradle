@@ -7,8 +7,6 @@ buildscript {
     dependencies {
         /*这里得配置是在gradle.properties中进行配置得*/
         classpath "com.android.tools.build:gradle:$localGradlePluginVersion"
-        /*黄油刀的配置*/
-        classpath 'com.jakewharton:butterknife-gradle-plugin:8.8.1'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -38,8 +36,4 @@ ext {
     //基础包
     appcompatVersion = "26.0.0-alpha1"
     constraintLayoutVersion = "1.0.1"
-    //黄油刀
-    butterknifeVersion = "8.8.1"
-    butterknifeCompilerVersion = "8.8.1"
-
 }
