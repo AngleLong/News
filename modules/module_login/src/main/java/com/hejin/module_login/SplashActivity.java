@@ -2,10 +2,10 @@ package com.hejin.module_login;
 
 import android.media.MediaPlayer;
 import android.net.Uri;
-import android.widget.VideoView;
 
 import com.hejin.lib_common.base.BaseActivity;
 import com.hejin.lib_common.base.BasePresenter;
+import com.hejin.module_login.widget.FullScreenVideoView;
 
 /**
  * 闪屏页面
@@ -15,7 +15,7 @@ import com.hejin.lib_common.base.BasePresenter;
  */
 public class SplashActivity extends BaseActivity implements MediaPlayer.OnCompletionListener {
 
-    private VideoView mVvAnimation;
+    private FullScreenVideoView mVvAnimation;
 
     //------------------------------生命周期方法------------------------------//
     @Override
@@ -51,9 +51,10 @@ public class SplashActivity extends BaseActivity implements MediaPlayer.OnComple
     @Override
     public void initView() {
         super.initView();
-        mVvAnimation = (VideoView) findViewById(R.id.vv_animation);
+        mVvAnimation = (FullScreenVideoView) findViewById(R.id.vv_animation);
     }
 
+    //------------------------------监听的方法------------------------------//
     @Override
     public void onCompletion(MediaPlayer mp) {
         mVvAnimation.start();

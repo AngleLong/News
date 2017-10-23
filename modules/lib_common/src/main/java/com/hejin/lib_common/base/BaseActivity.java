@@ -7,8 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.hejin.lib_common.utils.ActivityManager;
 
-import butterknife.ButterKnife;
-
 /**
  * 作者: *贺金龙
  * 创建时间: *  2017/10/20 21:30
@@ -46,9 +44,6 @@ public abstract class BaseActivity<V extends BaseView<T>, T extends BasePresente
         /*设置布局*/
         setContentView(provideContentViewId());
 
-        /*绑定黄油刀*/
-        ButterKnife.bind(this);
-
         /*记录打开的Activity*/
         ActivityManager.addActivity(this);
 
@@ -84,7 +79,6 @@ public abstract class BaseActivity<V extends BaseView<T>, T extends BasePresente
     public abstract T createPresenter();
 
     //------------------------------可实现的方法------------------------------//
-
 
     /**
      * <p>

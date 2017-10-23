@@ -8,7 +8,7 @@
     tools:context="com.hejin.module_login.SplashActivity">
 
     <!--采用VideoView播放动画-->
-    <VideoView
+    <com.hejin.module_login.widget.FullScreenVideoView
         android:id="@+id/vv_animation"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
