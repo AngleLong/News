@@ -17,4 +17,8 @@ dependencies {
     /*基础包*/
     compile "com.android.support:appcompat-v7:$rootProject.appcompatVersion"
     compile "com.android.support.constraint:constraint-layout:$rootProject.constraintLayoutVersion"
+
+    /*ARouter*/
+    compile "com.alibaba:arouter-api:$rootProject.arouterApiVersion"
+    annotationProcessor "com.alibaba:arouter-compiler:$rootProject.arouterCompilerVersion"
 }
