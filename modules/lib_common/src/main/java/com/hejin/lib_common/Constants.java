@@ -4,7 +4,7 @@ package com.hejin.lib_common;
  * author :  贺金龙
  * create time : 2017/10/26 11:00
  * description : 静态井段存放地址
- * instructions : 
+ * instructions :
  * version :
  */
 public class Constants {
@@ -19,6 +19,11 @@ public class Constants {
         /**
          * 所有请求的根接口
          */
-        String BaseUrl = "";
+        String BaseUrl = "http://op.juhe.cn/onebox/basketball/";
+
+        /**
+         * NBA常规赛赛程赛果
+         */
+        String TIMING = "nba?key=09f926b1259390831a0dae5875ef4654";
     }
 }

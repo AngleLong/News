@@ -34,7 +34,7 @@ public class RetrofitManager {
     private static Cache cache = new Cache(new File(cachedirPath), cacheSize);
 
 
-    private static Retrofit createRetrofit() {
+    public static Retrofit createRetrofit() {
         /*构建Retrofit对象*/
         /*支持以实体类返回*/
         Retrofit mRetrofit = new Retrofit.Builder()
@@ -67,17 +67,4 @@ public class RetrofitManager {
                 .cache(cache)/*增加缓存对的操作*/
                 .build();
     }
-
-    /**
-     * author :  贺金龙
-     * create time : 2017/10/26 10:58
-     * description : 提供ApiService
-     * instructions : 这里就很好的把SystemApiService的耦合和OkHttp3解决了,这里可以提供多个ApiService
-     * 这里如果要是这么封装的话，必须要把所有的接口都写在这个ApiServer里面了
-     * version :1.0
-     */
-    public static ApiServer provideApiService() {
-        return createRetrofit().create(ApiServer.class);
-    }
-
 }
