@@ -13,7 +13,7 @@ android {
         /*ARouter使用*/
         javaCompileOptions {
             annotationProcessorOptions {
-                arguments = [ moduleName : project.getName() ]
+                arguments = [moduleName: project.getName()]
             }
         }
     }
@@ -28,4 +28,18 @@ dependencies {
     /*ARouter*/
     compile "com.alibaba:arouter-api:$rootProject.arouterApiVersion"
     annotationProcessor "com.alibaba:arouter-compiler:$rootProject.arouterCompilerVersion"
+
+    /*retrofit2.0*/
+    compile "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    /*关联Json的*/
+    compile "com.squareup.retrofit2:converter-gson:$rootProject.converterGson"
+    /*关联Retrofit和RxJava的*/
+    compile "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:$rootProject.retrofit2Rxjava2Adapter"
+    /*Log拦截器*/
+    compile "com.squareup.okhttp3:logging-interceptor:$rootProject.loggingInterceptor"
+    /*RxJava*/
+    compile "io.reactivex.rxjava2:rxjava:$rootProject.rxJavaVersion"
+    compile "io.reactivex.rxjava2:rxandroid:$rootProject.rxAndroidVersion"
+    /*OkHttp3*/
+    compile "com.squareup.okhttp3:okhttp:$rootProject.OkHttp3Version"
 }

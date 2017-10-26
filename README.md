@@ -3,6 +3,8 @@
 ##1.模块化开发
 ##2.分包管理
 ##3.VideoView播放本地视频
+##4.沉浸式状态栏
+##5.ARouTer
 
 #用到的第三方
 ##1.黄油刀ButterKnife
@@ -13,3 +15,8 @@
 ##2.ARouter路由框架
 - [在寻找雪见的景天的文章](http://www.jianshu.com/p/fb20ab18c4cb)
 - [gitHub地址](https://github.com/alibaba/ARouter)
+
+##3.沉浸式状态栏
+- [扬州慢_的文章](http://www.jianshu.com/p/dc20e98b9a90)
+
+##4.OkHttp3 Retrofit2.0 RxJava2.0

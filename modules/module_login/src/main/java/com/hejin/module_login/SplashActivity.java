@@ -8,10 +8,12 @@ import com.hejin.lib_common.base.BasePresenter;
 import com.hejin.module_login.widget.FullScreenVideoView;
 
 /**
- * 闪屏页面
- * <p>
+ * author :  贺金龙
+ * create time : 2017/10/26 10:37
+ * description : 闪屏页面
  * 说明:此页面包含的功能如下:
  * 1.VideoView播放本地动画
+ * version :1.0
  */
 public class SplashActivity extends BaseActivity implements MediaPlayer.OnCompletionListener {
 
