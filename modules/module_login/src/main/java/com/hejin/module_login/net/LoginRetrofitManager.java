@@ -12,16 +12,10 @@ import com.hejin.module_login.ApiServer;
  * 如果有多个API的情况只要增加相应的方法就可以了
  * version : 1.0
  */
-public class LoginRetrofitManager {
-    /**
-     * author :  贺金龙
-     * create time : 2017/10/26 10:58
-     * description : 提供ApiService
-     * instructions : 这里就很好的把SystemApiService的耦合和OkHttp3解决了,这里可以提供多个ApiService
-     * 这里如果要是这么封装的话，必须要把所有的接口都写在这个ApiServer里面了
-     * version :1.0
-     */
-    public static ApiServer provideApiService() {
-        return RetrofitManager.createRetrofit().create(ApiServer.class);
+public class LoginRetrofitManager extends RetrofitManager<ApiServer> {
+
+    @Override
+    public ApiServer getApiSever() {
+        return createRetrofit().create(ApiServer.class);
     }
 }
